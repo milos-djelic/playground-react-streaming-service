@@ -1,0 +1,11 @@
+version: '3.8'
+
+services: 
+  react-streaming-service: 
+    container_name: streaming-service
+    image: streaming-service
+    build: .
+    ports: 
+      - 3000:3000
+    env_file:
+      - .env
